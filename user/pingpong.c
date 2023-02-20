@@ -12,16 +12,15 @@ int main()
   if (fork() > 0) {
     write(p[1], msg, MSGSIZE);
     while (read(p[0], buf, MSGSIZE) > 0) {
-      printf("pong recieved");
-      exit(0);
+      printf("pong recieved\n");
     }
     
   }
   else {
     while (read(p[0], buf, MSGSIZE) > 0) {
-      printf("ping received");
+      printf("ping received\n");
       write(p[1], msg, MSGSIZE);
-      exit(0);
     }
   }
+  exit(0);
 }
