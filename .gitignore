@@ -6,6 +6,12 @@ _*
 *.sym
 *.img
 *.vs
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vcxproj.json
+*.json
 vectors.S
 bootblock
 entryother
