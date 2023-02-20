@@ -11,7 +11,7 @@ int main()
 
   if (fork() > 0) {
     write(p[1], msg, MSGSIZE);
-    wait(NULL);
+    wait(nullptr);
     while (read(p[0], buf, MSGSIZE) > 0) {
       printf("pong recieved\n");
     }
