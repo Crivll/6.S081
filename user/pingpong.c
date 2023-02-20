@@ -1,6 +1,6 @@
 #include "kernel/types.h"
 #include "user/user.h"
-#define MSGSIZE 5;
+#define MSGSIZE 5
 
 int main()
 {
